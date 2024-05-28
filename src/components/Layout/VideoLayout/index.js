@@ -11,8 +11,6 @@ function VideoLayout() {
   const videoState = useSelector((state) => state.video);
   // console.log("dsad", videoState);
   const { videoList, isLoading, isError } = videoState;
-  console.log(videoState.isLoading);
-  console.log(videoState.videoList.items);
 
   // const handletest = () => {
   //   dispath(fetchAllVideo());
@@ -33,23 +31,23 @@ function VideoLayout() {
   //   fetchDate();
   // }, [page]);
 
-  // const handleSrcoll = () => {
-  //   // console.log("height", document.documentElement.scrollHeight);
-  //   // console.log("top", document.documentElement.scrollTop);
-  //   if (
-  //     window.innerHeight + document.documentElement.scrollTop + 1 >=
-  //     document.documentElement.scrollHeight
-  //   ) {
-  //     setPage((prev) => prev + 2);
-  //   }
-  // };
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleSrcoll);
+  const handleSrcoll = () => {
+    // console.log("height", document.documentElement.scrollHeight);
+    // console.log("top", document.documentElement.scrollTop);
+    if (
+      window.innerHeight + document.documentElement.scrollTop + 1 >=
+      document.documentElement.scrollHeight
+    ) {
+      setPage((prev) => prev + 2);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleSrcoll);
 
-  //   return () => {
-  //     window.removeEventListener("scroll", handleSrcoll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", handleSrcoll);
+    };
+  }, []);
 
   // return (
   //   <div className="gird_column_videos">

@@ -3,10 +3,16 @@ import images from "../../../../assets/images";
 import { Link, json } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Search from "../../../../pages/Search";
+import { useDispatch } from "react-redux";
+import { searchVideo } from "../../../store/action";
 function Header() {
   const [search, setSearch] = useState("");
   // useEffect(() => {
   window.localStorage.setItem("search_value", JSON.stringify(search));
+  const dispath = useDispatch();
+  useEffect(() => {
+    dispath(searchVideo(search));
+  });
 
   return (
     <div className="header">

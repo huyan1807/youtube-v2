@@ -1,23 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchAllVideo } from "./action";
+import { searchVideo } from "./action";
 
 const initialState = {
   videoList: [],
   isLoading: false,
   isError: false,
 };
-const videoSlice = createSlice({
+const searchSlice = createSlice({
   name: "videos",
   initialState,
   extraReducers: (builder) => {
-    builder.addCase(fetchAllVideo.pending, (state) => {
+    builder.addCase(searchVideo.pending, (state) => {
+      //   console.log("isloading");
       state.isLoading = true;
     });
-    builder.addCase(fetchAllVideo.fulfilled, (state, action) => {
+    builder.addCase(searchVideo.fulfilled, (state, action) => {
+      //   console.log("success");
       state.videoList = action.payload;
       state.isLoading = false;
     });
-    builder.addCase(fetchAllVideo.rejected, (state) => {
+    builder.addCase(searchVideo.rejected, (state) => {
       state.videoList = [];
       state.isLoading = false;
       state.isError = true;
@@ -25,4 +27,4 @@ const videoSlice = createSlice({
   },
 });
 
-export default videoSlice.reducer;
+export default searchSlice.reducer;
