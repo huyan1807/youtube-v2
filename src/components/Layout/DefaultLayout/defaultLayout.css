@@ -1,0 +1,12 @@
+.content {
+  /* min-height: 1000px; */
+  overflow-x: hidden;
+  margin-top: 60px;
+}
+.container {
+  display: flex;
+}
+.catergories_content {
+  margin-top: 50px;
+  flex: 1;
+}

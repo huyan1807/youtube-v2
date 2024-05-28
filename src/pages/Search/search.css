@@ -1,0 +1,41 @@
+.search_button {
+  margin-top: 20px;
+  display: flex;
+  margin-left: 10px;
+  width: 100%;
+}
+.search_video iframe {
+  /* width: 100%;
+  height: 100%; */
+  width: 500px;
+  height: 300px;
+}
+.search_video_infor {
+  margin-left: 20px;
+  width: 50%;
+}
+.search_video_chanel {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.search_video_mychanel {
+  width: 24px;
+  height: 24px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.name_chanel {
+  margin-right: 8px;
+}
+.search_video_description {
+  margin-top: 10px;
+}
+.search_video_chanel_icon {
+  width: 12px;
+  height: 12px;
+}
+.search_content {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

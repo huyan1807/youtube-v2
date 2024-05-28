@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+  /* margin-top: 2px; */
+  background-color: white;
+}
+.header_menu {
+  display: flex;
+  align-items: center;
+}
+/* .menu_hover:hover {
+  background-color: #d3d3d3;
+  border-radius: 10px;
+} */
+
+.header_menu img {
+  width: 24px;
+  height: 24px;
+  margin: 0 25px;
+}
+.header_logo {
+  display: flex;
+}
+.header_logo img {
+  width: 90px;
+  height: 20px;
+  margin: 0 4px;
+}
+.header_search {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.header_infor {
+  display: flex;
+  align-items: center;
+  margin-left: 260px;
+}
+/* .header_info_meet:hover {
+  display: block;
+  background-color: #d3d3d3;
+  cursor: pointer;
+} */
+
+.header_micro {
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  margin-left: 15px;
+}
+.header_micro:hover {
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+.header_logo span {
+  position: relative;
+  bottom: 7px;
+  font-size: 10px;
+  font-family: Roboto, Arial, sans-serif;
+}
+.header_search_input {
+  font-size: 16px;
+  line-height: 24px;
+  width: 526px;
+  height: 40px;
+  margin: 0 0 0 40px;
+  border-radius: 40px 0 0 40px;
+  padding: 0 4px 0 16px;
+  border: 1px solid #ccc;
+}
+.header_keyboard {
+  padding: 0 4px;
+  right: 7px;
+  top: 15px;
+  position: absolute;
+}
+.header_search_total {
+  /* display: inline-block; */
+  position: relative;
+}
+.header_search_btn {
+  width: 64px;
+  height: 40px;
+  border-radius: 0 40px 40px 0;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  padding: 7px;
+  background-color: #f8f8f8;
+}
+.header_search_icon {
+  padding: 1px 6px;
+}
+.header_search_btn:hover {
+  cursor: pointer;
+  background-color: #d3d3d3;
+}
+.header_info_meet {
+  height: 24px;
+  width: 24px;
+  margin: 15px;
+}
+.header_info_notification {
+  height: 24px;
+  width: 24px;
+  margin: 15px;
+}
+.header_info_profile {
+  height: 32px;
+  width: 32px;
+  /* padding: 1px 6px; */
+  border-radius: 32px;
+  margin: 0 20px;
+}
+
+/*  */
